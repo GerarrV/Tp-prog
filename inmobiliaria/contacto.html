@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contacto Inmobiliaria.">
+  <link rel="icon" href="assets/favicon.ico" sizes="any">
+  <title>Contacto </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/colors.css">
+  <link rel="stylesheet" href="css/contacto.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container bar">
+      <a class="logo-wrap" href="index.html" aria-label="Ir al inicio">
+        <div class="brand">Inmobiliaria</div>
+      </a>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="propiedades.html">Propiedades</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h1>Contacto</h1>
+
+      <form class="form" action="#" method="post">
+        <div class="grid cards-2">
+          <div class="form-row">
+            <label for="nombre">Nombre </label>
+            <input class="input" type="text" id="nombre" required minlength="3" maxlength="50">
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input class="input" type="email" id="email" required>
+          </div>
+        </div>
+
+        <div class="grid cards-2">
+          <div class="form-row">
+            <label for="tel">Teléfono</label>
+            <input class="input" type="tel" id="tel" required>
+          </div>
+          <div class="form-row">
+            <label for="tipo">Tipo de propiedad</label>
+            <select class="select" id="tipo" required>
+              <option value="" selected disabled>Opción</option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="comentarios">Comentarios</label>
+            <textarea class="textarea" id="comentarios" rows="4" required maxlength="250"></textarea>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button class="btn" type="submit">Enviar</button>
+          <button class="btn secondary" type="reset">Limpiar</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p> Inmobiliaria 
+      <p class="footer-social">
+       
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
