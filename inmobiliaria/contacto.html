@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,6 +13,7 @@
   <link rel="stylesheet" href="css/colors.css">
   <link rel="stylesheet" href="css/contacto.css">
 </head>
+
 <body>
   <header class="site-header">
     <div class="container bar">
@@ -31,43 +33,71 @@
     <section class="section">
       <h1>Contacto</h1>
 
-      <form class="form" action="#" method="post">
-        <div class="grid cards-2">
-          <div class="form-row">
-            <label for="nombre">Nombre </label>
-            <input class="input" type="text" id="nombre" required minlength="3" maxlength="50">
-          </div>
-          <div class="form-row">
-            <label for="email">Email</label>
-            <input class="input" type="email" id="email" required>
-          </div>
+      <form class="form" id="contactoForm" action="#" method="post">
+        <!-- Nombre -->
+        <div class="form-row">
+          <label for="nombre">Nombre</label>
+          <input class="input" type="text" id="nombre" name="nombre" required minlength="3" maxlength="50">
         </div>
 
-        <div class="grid cards-2">
-          <div class="form-row">
-            <label for="tel">Teléfono</label>
-            <input class="input" type="tel" id="tel" required>
-          </div>
-          <div class="form-row">
-            <label for="tipo">Tipo de propiedad</label>
-            <select class="select" id="tipo" required>
-              <option value="" selected disabled>Opción</option>
-              <option value=""></option>
-              <option value=""></option>
-              <option value=""></option>
-            </select>
-          </div>
-          <div class="form-row">
-            <label for="comentarios">Comentarios</label>
-            <textarea class="textarea" id="comentarios" rows="4" required maxlength="250"></textarea>
-          </div>
+        <!-- Email -->
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input class="input" type="email" id="email" name="email" required>
         </div>
 
+        <!-- Teléfono -->
+        <div class="form-row">
+          <label for="tel">Teléfono</label>
+          <input class="input" type="tel" id="tel" name="tel" required pattern="^[0-9]{7,15}$">
+        </div>
+
+        <!-- Tipo de propiedad -->
+        <div class="form-row">
+          <label for="tipo">Tipo de propiedad</label>
+          <select class="select" id="tipo" name="tipo" required>
+            <option value="" selected disabled>Seleccione una opción</option>
+            <option value="casa">Casa</option>
+            <option value="departamento">Departamento</option>
+            <option value="terreno">Terreno</option>
+            <option value="local">Local comercial</option>
+          </select>
+        </div>
+
+        <!-- Fecha de nacimiento -->
+        <div class="form-row">
+          <label for="fecha">Fecha de nacimiento</label>
+          <input class="input" type="date" id="fecha" name="fecha" required>
+        </div>
+
+        <!-- Preferencia de contacto (Radio) -->
+        <div class="form-row">
+          <label>Preferencia de contacto</label>
+          <label><input type="radio" name="preferencia" value="telefono" required> Teléfono</label>
+          <label><input type="radio" name="preferencia" value="email" required> Email</label>
+        </div>
+
+        <!-- Áreas de interés (Checkboxes) -->
+        <div class="form-row">
+          <label>Áreas de interés</label>
+          <label><input type="checkbox" name="intereses" value="venta"> Venta</label>
+          <label><input type="checkbox" name="intereses" value="alquiler"> Alquiler</label>
+          <label><input type="checkbox" name="intereses" value="tasacion"> Tasación</label>
+        </div>
+
+        <!-- Comentarios -->
+        <div class="form-row">
+          <label for="comentarios">Comentarios</label>
+          <textarea class="textarea" id="comentarios" name="comentarios" rows="4" required maxlength="250"></textarea>
+        </div>
+
+        <!-- Botones -->
         <div class="actions">
           <button class="btn" type="submit">Enviar</button>
           <button class="btn secondary" type="reset">Limpiar</button>
         </div>
       </form>
+
     </section>
   </main>
 
@@ -78,5 +108,9 @@
       </p>
     </div>
   </footer>
+  <script src="contacto.js"></script>
+
+
 </body>
+
 </html>
