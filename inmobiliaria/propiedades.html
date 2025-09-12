@@ -30,89 +30,21 @@
   <main class="container">
     <section class="section">
       <h1>Propiedades disponibles</h1>
-      <div class="grid cards-4">
-        
-        <article class="card">
-          <img class="card-media" src="assets/images/propiedad_1.webp" alt="" width="640" height="400" loading="lazy">
-          <div class="card-body">
-            <h3 class="card-title">Casa Grande</h3>
-            <p class="card-meta">callao 115</p>
-            <p class="price">Precio $300.000.00</p>
-          </div>
-        </article>
-
-        <article class="card">
-          <img class="card-media" src="assets/images/propiedad_2.webp" alt="" width="640" height="400" loading="lazy">
-          <div class="card-body">
-            <h3 class="card-title">Departamento Acogedor</h3>
-            <p class="card-meta">Montevideo 1245</p>
-            <p class="price">Precio $220.000.00</p>
-          </div>
-        </article>
-
-        <article class="card">
-          <img class="card-media" src="assets/images/propiedad_3.webp" alt="" width="640" height="400" loading="lazy">
-          <div class="card-body">
-            <h3 class="card-title">Casa de vacaciones</h3>
-            <p class="card-meta">Belgrano 100</p>
-            <p class="price">Precio $270.000.00</p>
-          </div>
-        </article>
-
-        <article class="card">
-          <img class="card-media" src="assets/images/propiedad_4.webp" alt="" width="640" height="400" loading="lazy">
-          <div class="card-body">
-            <h3 class="card-title">Casa pb</h3>
-            <p class="card-meta">San Juan 2065</p>
-            <p class="price">Precio $180.000.00</p>
-          </div>
-        </article>
-
-        <article class="card">
-          <img class="card-media" src="assets/images/propiedad_5.webp" alt="" width="640" height="400" loading="lazy">
-          <div class="card-body">
-            <h3 class="card-title">Casa esquinera</h3>
-            <p class="card-meta">Mendoza 1309</p>
-            <p class="price">Precio $195.000.00</p>
-          </div>
-        </article>
-
-        <article class="card">
-          <img class="card-media" src="assets/images/propiedad_6.webp" alt="" width="640" height="400" loading="lazy">
-          <div class="card-body">
-            <h3 class="card-title">Casa pb 3 habitaciones</h3>
-            <p class="card-meta">cordoba 450</p>
-            <p class="price">Precio $265.000.00</p>
-          </div>
-        </article>
-
-        <article class="card">
-          <img class="card-media" src="assets/images/propiedad_7.webp" alt="" width="640" height="400" loading="lazy">
-          <div class="card-body">
-            <h3 class="card-title">Casa pb con patio</h3>
-            <p class="card-meta">San nicolas 3299</p>
-            <p class="price">Precio $120.000.00</p>
-          </div>
-        </article>
-
-        <article class="card">
-          <img class="card-media" src="assets/images/propiedad_8.webp" alt="" width="640" height="400" loading="lazy">
-          <div class="card-body">
-            <h3 class="card-title">Departamento 1 habitacion</h3>
-            <p class="card-meta">caferata 1506</p>
-            <p class="price">Precio $80.000.00</p>
-          </div>
-        </article>
-
-      </div>
+      <div id="prop-grid" class="grid cards-4" aria-live="polite"></div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <p> Inmobiliaria</p>
-      <p class="footer-social"><a href="index.html" >Todos los derechos de copyright de inmobiliaria</a></p>
+  <!-- Modal para detalle de propiedad -->
+  <div id="prop-modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="prop-modal-title" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-content" role="document">
+      <button class="modal-close" aria-label="Cerrar" data-close>&times;</button>
+      <div id="prop-modal-body"></div>
     </div>
-  </footer>
+  </div>
+
+  <script src="js/propiedades.js" defer></script>
+  <div id="footer-placeholder"></div>
+  <script src="js/footer.js" defer></script>
 </body>
 </html>

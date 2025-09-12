@@ -1,0 +1,29 @@
+
+
+1) Footer reutilizable e inyectado
+- Se creó footer.html con el pie de página compartido.
+- Se implementó js/footer.js para inyectar el footer en todas las páginas mediante <div id="footer-placeholder"></div>.
+- Se actualizó index.html, propiedades.html, contacto.html y nosotros.html para usar el footer inyectado.
+- Nota CORS: para que fetch() funcione, servir el sitio con un servidor local (Live Server).
+
+2) Estilos globales y del header
+- Se ajustó css/colors.css para tema oscuro consistente.
+- Se mejoraron los botones del header (pills, hover, focus) y se forzó el color de links para evitar el azul por defecto.
+- Se garantizó que el header siempre quede por encima del contenido (z-index alto y position: sticky).
+
+3) Contacto más prolijo
+- Se mejoró css/contacto.css: formulario con estilo de tarjeta, inputs sobre surface, focus con glow, botones redondeados y responsive.
+
+4) Propiedades dinámicas desde JSON y modal con detalle
+- Se creó JSON/inmuebles.json como “base de datos” editable.
+- Se creó js/propiedades.js para renderizar las cards desde el JSON.
+- Al hacer click, se abre un modal con más información de la propiedad.
+
+5) Página “Nosotros”
+- Se completó contenido con quiénes somos
+
+
+
+PD
+- Para agregar nuevas propiedades, editar JSON/inmuebles.json; la UI se actualiza sola.
+- Para agregar más imágenes por propiedad, usar la clave "imagenes": ["ruta1", "ruta2", ...].

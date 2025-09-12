@@ -1,0 +1,111 @@
+[
+    {
+      "id": 1,
+      "titulo": "Casa Grande",
+      "direccion": "Callao 115",
+      "precio": 300000,
+      "descripcion": "Maravillosa casa a las afueras de Rosario.",
+      "imagen": "assets/images/propiedad_1.webp",
+      "dormitorios": 4,
+      "banos": 3,
+      "metros": 240,
+      "tipo": "casa",
+      "estado": "venta"
+    },
+    {
+      "id": 2,
+      "titulo": "Departamento Acogedor",
+      "direccion": "Montevideo 1245",
+      "precio": 220000,
+      "descripcion": "Departamento grande en pleno centro.",
+      "imagen": "assets/images/propiedad_2.webp",
+      "dormitorios": 3,
+      "banos": 2,
+      "metros": 110,
+      "tipo": "departamento",
+      "estado": "venta"
+    },
+    {
+      "id": 3,
+      "titulo": "Casa de Vacaciones",
+      "direccion": "Belgrano 100",
+      "precio": 270000,
+      "descripcion": "Casa para vacacionar con gran espacio y estilo rústico.",
+      "imagen": "assets/images/propiedad_3.webp",
+      "dormitorios": 3,
+      "banos": 2,
+      "metros": 180,
+      "tipo": "casa",
+      "estado": "venta"
+    },
+    {
+      "id": 4,
+      "titulo": "Casa PB",
+      "direccion": "San Juan 2065",
+      "precio": 180000,
+      "descripcion": "Casa en planta baja luminosa.",
+      "imagen": "assets/images/propiedad_4.webp",
+      "dormitorios": 2,
+      "banos": 1,
+      "metros": 95,
+      "tipo": "casa",
+      "estado": "venta"
+    },
+    {
+      "id": 5,
+      "titulo": "Casa Esquinera",
+      "direccion": "Mendoza 1309",
+      "precio": 195000,
+      "descripcion": "Casa en esquina con excelente orientación.",
+      "imagen": "assets/images/propiedad_5.webp",
+      "dormitorios": 3,
+      "banos": 2,
+      "metros": 140,
+      "tipo": "casa",
+      "estado": "venta"
+    },
+    {
+      "id": 6,
+      "titulo": "Casa PB 3 Habitaciones",
+      "direccion": "Córdoba 450",
+      "precio": 265000,
+      "descripcion": "Casa en planta baja de 3 habitaciones.",
+      "imagen": "assets/images/propiedad_6.webp",
+      "dormitorios": 3,
+      "banos": 2,
+      "metros": 150,
+      "tipo": "casa",
+      "estado": "venta"
+    },
+    {
+      "id": 7,
+      "titulo": "Casa PB con Patio",
+      "direccion": "San Nicolás 3299",
+      "precio": 120000,
+      "descripcion": "Casa en planta baja con amplio patio.",
+      "imagen": "assets/images/propiedad_7.webp",
+      "dormitorios": 2,
+      "banos": 1,
+      "metros": 90,
+      "tipo": "casa",
+      "estado": "venta"
+    },
+    {
+      "id": 8,
+      "titulo": "Departamento 1 Habitación",
+      "direccion": "Caferata 1506",
+      "precio": 80000,
+      "descripcion": "Departamento ideal para primera vivienda.",
+      "imagen": "assets/images/propiedad_8.webp",
+      "imagenes": [
+        "assets/images/propiedad_8.webp", 
+        "assets/images/propiedad_7.webp", 
+        "assets/images/propiedad_6.webp"
+      ],
+      "dormitorios": 1,
+      "banos": 1,
+      "metros": 55,
+      "tipo": "departamento",
+      "estado": "venta"
+    }
+  ]
