@@ -30,6 +30,42 @@
   <main class="container">
     <section class="section">
       <h1>Propiedades disponibles</h1>
+      <div class="card" aria-label="Filtros de búsqueda">
+        <div class="card-body">
+          <div class="grid" style="grid-template-columns: repeat(6, 1fr); gap: .75rem;">
+            <input id="f-texto" type="search" placeholder="Buscar por título o dirección" aria-label="Buscar" />
+            <select id="f-tipo" aria-label="Tipo">
+              <option value="">Tipo</option>
+            </select>
+            <select id="f-estado" aria-label="Estado">
+              <option value="">Operación</option>
+            </select>
+            <select id="f-dorm" aria-label="Dormitorios">
+              <option value="">Dormitorios</option>
+              <option value="1">1+</option>
+              <option value="2">2+</option>
+              <option value="3">3+</option>
+              <option value="4">4+</option>
+            </select>
+            <input id="f-precio-min" type="number" inputmode="numeric" placeholder="Precio mín" aria-label="Precio mínimo" />
+            <input id="f-precio-max" type="number" inputmode="numeric" placeholder="Precio máx" aria-label="Precio máximo" />
+          </div>
+          <div class="grid" style="grid-template-columns: 1fr auto; gap: .75rem; margin-top: .75rem;">
+            <div>
+              <button id="f-limpiar" class="cta" type="button" aria-label="Limpiar filtros" style="margin-right:.5rem;">Limpiar</button>
+            </div>
+            <div>
+              <select id="f-orden" aria-label="Ordenar">
+                <option value="">Ordenar</option>
+                <option value="precio-asc">Precio: menor a mayor</option>
+                <option value="precio-desc">Precio: mayor a menor</option>
+                <option value="titulo-asc">Título: A-Z</option>
+                <option value="titulo-desc">Título: Z-A</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
       <div id="prop-grid" class="grid cards-4" aria-live="polite"></div>
     </section>
   </main>
